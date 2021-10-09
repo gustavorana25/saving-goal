@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import { Theme } from '../theme/theme.types';
 
-const GlobalStyle = createGlobalStyle<Theme>`
+const GlobalStyle = createGlobalStyle`
   html{
     font-size: 62.5%;
     scroll-behavior: smooth;
