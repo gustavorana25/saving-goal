@@ -4,6 +4,7 @@ export const theme = {
     secondary: "'Rubik', sans-serif",
   },
   colors: {
+    white: '#FFFFFF',
     blueGray10: '#F4F8FA',
     blueGray50: '#E9EEF2',
     blueGray100: '#CBD5DC',
@@ -20,6 +21,8 @@ export const theme = {
     medium: '16px',
     xMedium: '24px',
     large: '32px',
+    xLarge: '48px',
+    xxLarge: '56px',
   },
   fontSizes: {
     xxSmall: '1rem',
@@ -29,5 +32,8 @@ export const theme = {
     large: '2rem',
     xLarge: '2.4rem',
     xxLarge: '3.2rem',
+  },
+  breakpoints: {
+    mobile: 600,
   },
 };
