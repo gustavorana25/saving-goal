@@ -1,10 +1,10 @@
-import React from 'react';
+import Layout from './components/Layout/Layout';
 import Router from './routes/Router';
 
 export function App(): JSX.Element {
   return (
-    <div>
+    <Layout>
       <Router />
-    </div>
+    </Layout>
   );
 }
