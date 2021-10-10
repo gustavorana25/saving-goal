@@ -38,4 +38,8 @@ export const theme = {
   breakpoints: {
     mobile: 600,
   },
+  borderRadius: {
+    small: '4px',
+    medium: '8px',
+  },
 };
