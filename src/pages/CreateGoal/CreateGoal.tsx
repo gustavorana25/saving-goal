@@ -1,7 +1,8 @@
 import CardContainer from '../../components/CardContainer/CardContainer.styles';
+import CurrencyInput from '../../components/form/CurrencyInput/CurrencyInput';
 import ImageAndInfo from '../../components/ImageAndInfo/ImageAndInfo';
 import TitleSection from '../../components/TitleSection/TitleSection';
-import { Section } from './CreateGoal.styles';
+import { Grid, Section } from './CreateGoal.styles';
 
 function CreateGoalPage(): JSX.Element {
   return (
@@ -15,6 +16,10 @@ function CreateGoalPage(): JSX.Element {
           image="buy-a-house.svg"
           description="Saving goal"
         />
+
+        <Grid>
+          <CurrencyInput label="Total amount" name="amount" />
+        </Grid>
       </CardContainer>
     </Section>
   );
