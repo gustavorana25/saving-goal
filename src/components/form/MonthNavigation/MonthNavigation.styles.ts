@@ -17,6 +17,10 @@ export const Container = styled.div`
 
   &:focus {
     border: 1px solid ${(props) => props.theme.colors.brandColorSecondary};
+
+    svg path {
+      fill: ${(props) => props.theme.colors.brandColorSecondary};
+    }
   }
 `;
 

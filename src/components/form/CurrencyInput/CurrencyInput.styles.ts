@@ -21,6 +21,10 @@ export const Input = styled.input`
 
 export const InputContainer = styled.div`
   position: relative;
+
+  &:focus-within svg path {
+    fill: ${(props) => props.theme.colors.brandColorSecondary};
+  }
 `;
 
 export const Dolar = styled(SvgIcon)`
