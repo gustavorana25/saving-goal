@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { device } from '../../styles/device/device';
 
-export const TitleSection = styled.h1`
+const TitleSection = styled.h1`
   color: ${(props) => props.theme.colors.brandColorPrimary};
   font-size: ${(props) => props.theme.fontSizes.large};
   font-weight: normal;
@@ -12,3 +12,5 @@ export const TitleSection = styled.h1`
     font-size: ${(props) => props.theme.fontSizes.xMedium};
   }
 `;
+
+export default TitleSection;

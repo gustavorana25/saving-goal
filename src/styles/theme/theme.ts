@@ -21,8 +21,9 @@ export const theme = {
     medium: '16px',
     xMedium: '24px',
     large: '32px',
-    xLarge: '48px',
-    xxLarge: '56px',
+    xLarge: '40px',
+    xxLarge: '48px',
+    xxxLarge: '56px',
   },
   fontSizes: {
     xxSmall: '1rem',
