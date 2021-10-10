@@ -11,8 +11,8 @@ import { MonthlyAmountProps } from './MonthlyAmount.types';
 
 function MonthlyAmount(props: MonthlyAmountProps): JSX.Element {
   const { amountMonths, totalAmount } = props;
+  const amountPerMonth = Math.ceil(totalAmount / amountMonths);
 
-  const amountPerMonth = Math.round(totalAmount / amountMonths);
   return (
     <GeneralMonthlyAmount>
       <TopContent>
