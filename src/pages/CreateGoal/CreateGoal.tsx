@@ -1,4 +1,5 @@
 import CardContainer from '../../components/CardContainer/CardContainer';
+import ImageAndInfo from '../../components/ImageAndInfo/ImageAndInfo';
 import TitleSection from '../../components/TitleSection/TitleSection';
 import { Section } from './CreateGoal.styles';
 
@@ -8,7 +9,13 @@ function CreateGoalPage(): JSX.Element {
       <TitleSection>
         Let&apos;s plan your <strong>saving goal</strong>.
       </TitleSection>
-      <CardContainer></CardContainer>
+      <CardContainer>
+        <ImageAndInfo
+          title="Buy a house"
+          image="buy-a-house.svg"
+          description="Saving goal"
+        />
+      </CardContainer>
     </Section>
   );
 }
