@@ -4,7 +4,7 @@ import SvgIcon from '../../SvgIcon/SvgIcon';
 export const Input = styled.input`
   border: 1px solid ${(props) => props.theme.colors.blueGray50};
   border-radius: ${(props) => props.theme.borderRadius.small};
-  padding: 14px 12px 13px 44px;
+  padding: 13px 12px 13px 44px;
   outline: 0;
   width: 100%;
   box-sizing: border-box;
