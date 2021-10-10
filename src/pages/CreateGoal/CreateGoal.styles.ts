@@ -20,3 +20,8 @@ export const Grid = styled.div`
     grid-template-columns: 1fr;
   }
 `;
+
+export const ButtonContainer = styled.div`
+  max-width: 320px;
+  margin: ${(props) => props.theme.gutterSpace.large} auto 0;
+`;
