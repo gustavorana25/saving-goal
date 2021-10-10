@@ -1,6 +1,9 @@
+import { useState } from 'react';
+import { useEffect } from 'react';
 import CardContainer from '../../components/CardContainer/CardContainer';
 import ImageAndInfo from '../../components/ImageAndInfo/ImageAndInfo';
 import TitleSection from '../../components/TitleSection/TitleSection';
+import useKeyBind from '../../utils/hooks/useKeyBind';
 import { Section } from './CreateGoal.styles';
 
 function CreateGoalPage(): JSX.Element {
