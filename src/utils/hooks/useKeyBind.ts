@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useCallback, useEffect } from 'react';
 
 const RIGHT_ARROW_KEY = 'ArrowRight';
 const LEFT_ARROW_KEY = 'ArrowLeft';
@@ -15,7 +15,7 @@ interface UseKeyBind {
 function useKeyBind(config: Config): UseKeyBind {
   const { onKeyPress, onHorizontalArrowPress } = config;
 
-  const listener = (event: KeyboardEvent) => {
+  const listener = useCallback((event: KeyboardEvent) => {
     if (onKeyPress) {
       onKeyPress(event.key);
     }
@@ -27,7 +27,7 @@ function useKeyBind(config: Config): UseKeyBind {
     if (event.key === LEFT_ARROW_KEY && onHorizontalArrowPress) {
       return onHorizontalArrowPress(-1);
     }
-  };
+  }, []);
 
   const handleKeyBindActivation = (active: boolean) => {
     if (active) {

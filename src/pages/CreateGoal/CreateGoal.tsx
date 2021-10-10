@@ -8,9 +8,13 @@ import MonthlyAmount from '../../components/MonthlyAmount/MonthlyAmount';
 import TitleSection from '../../components/TitleSection/TitleSection';
 import { currencyStringToNumber } from '../../utils/currencyFormater';
 import { ButtonContainer, Grid, Section } from './CreateGoal.styles';
+import { addMonths } from 'date-fns';
+
+const nextMonthDate = addMonths(new Date(), 1);
 
 function CreateGoalPage(): JSX.Element {
   const [amount, setAmount] = useState('');
+  const [reachDate, setReachDate] = useState(nextMonthDate);
 
   const amountAsNumber = currencyStringToNumber(amount);
 
@@ -33,7 +37,12 @@ function CreateGoalPage(): JSX.Element {
             label="Total amount"
             name="amount"
           />
-          <MonthNavigation label="Reach goal by" name="reachDate" />
+          <MonthNavigation
+            value={reachDate}
+            handleChange={setReachDate}
+            label="Reach goal by"
+            name="reachDate"
+          />
         </Grid>
 
         <MonthlyAmount amountMonths={12} totalAmount={amountAsNumber} />

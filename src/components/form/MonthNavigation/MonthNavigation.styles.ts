@@ -14,6 +14,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  user-select: none;
 
   &:focus {
     border: 1px solid ${(props) => props.theme.colors.brandColorSecondary};
@@ -29,6 +30,7 @@ export const Month = styled.h5`
   font-size: ${(props) => props.theme.fontSizes.medium};
   font-weight: 600;
   line-height: 150%;
+  text-transform: capitalize;
 `;
 
 export const Year = styled.p`
