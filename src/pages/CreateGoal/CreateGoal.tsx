@@ -7,7 +7,7 @@ import ImageAndInfo from '../../components/ImageAndInfo/ImageAndInfo';
 import MonthlyAmount from '../../components/MonthlyAmount/MonthlyAmount';
 import TitleSection from '../../components/TitleSection/TitleSection';
 import { currencyStringToNumber } from '../../utils/currencyFormater';
-import { ButtonContainer, Grid, Section } from './CreateGoal.styles';
+import { ButtonContainer, Grid, Section, Container } from './CreateGoal.styles';
 import { addMonths } from 'date-fns';
 
 const nextMonthDate = addMonths(new Date(), 1);
@@ -24,28 +24,30 @@ function CreateGoalPage(): JSX.Element {
         Let&apos;s plan your <strong>saving goal</strong>.
       </TitleSection>
       <CardContainer>
-        <ImageAndInfo
-          title="Buy a house"
-          image="buy-a-house.svg"
-          description="Saving goal"
-        />
-
-        <Grid>
-          <CurrencyInput
-            value={amount}
-            setValue={(newValue) => setAmount(newValue)}
-            label="Total amount"
-            name="amount"
+        <Container>
+          <ImageAndInfo
+            title="Buy a house"
+            image="buy-a-house.svg"
+            description="Saving goal"
           />
-          <MonthNavigation
-            value={reachDate}
-            handleChange={setReachDate}
-            label="Reach goal by"
-            name="reachDate"
-          />
-        </Grid>
 
-        <MonthlyAmount reachDate={reachDate} totalAmount={amountAsNumber} />
+          <Grid>
+            <CurrencyInput
+              value={amount}
+              setValue={(newValue) => setAmount(newValue)}
+              label="Total amount"
+              name="amount"
+            />
+            <MonthNavigation
+              value={reachDate}
+              handleChange={setReachDate}
+              label="Reach goal by"
+              name="reachDate"
+            />
+          </Grid>
+
+          <MonthlyAmount reachDate={reachDate} totalAmount={amountAsNumber} />
+        </Container>
 
         <ButtonContainer>
           <Button>Confirm</Button>

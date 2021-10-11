@@ -6,8 +6,15 @@ export const Section = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: ${(props) => props.theme.gutterSpace.xxLarge};
+  padding: ${(props) =>
+    `${props.theme.gutterSpace.large} 0 ${props.theme.gutterSpace.xxLarge}`};
   height: 100%;
+`;
+
+export const Container = styled.div`
+  ${device.mobile} {
+    padding: 0 ${(props) => props.theme.gutterSpace.xSmall};
+  }
 `;
 
 export const Grid = styled.div`
@@ -24,4 +31,8 @@ export const Grid = styled.div`
 export const ButtonContainer = styled.div`
   max-width: 320px;
   margin: ${(props) => props.theme.gutterSpace.large} auto 0;
+
+  ${device.mobile} {
+    max-width: 100%;
+  }
 `;

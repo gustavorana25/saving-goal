@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../styles/device/device';
 
 const CardContainer = styled.h1`
   background-color: ${(props) => props.theme.colors.white};
@@ -9,6 +10,11 @@ const CardContainer = styled.h1`
   width: 100%;
   max-width: 560px;
   box-sizing: border-box;
+
+  ${device.mobile} {
+    padding: ${(props) =>
+      `${props.theme.gutterSpace.xMedium} ${props.theme.gutterSpace.xMedium} ${props.theme.gutterSpace.xLarge}`};
+  }
 `;
 
 export default CardContainer;
