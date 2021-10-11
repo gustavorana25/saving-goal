@@ -45,7 +45,7 @@ function CreateGoalPage(): JSX.Element {
           />
         </Grid>
 
-        <MonthlyAmount amountMonths={12} totalAmount={amountAsNumber} />
+        <MonthlyAmount reachDate={reachDate} totalAmount={amountAsNumber} />
 
         <ButtonContainer>
           <Button>Confirm</Button>

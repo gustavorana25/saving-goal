@@ -8,9 +8,12 @@ import {
   Text,
 } from './MonthlyAmount.styles';
 import { MonthlyAmountProps } from './MonthlyAmount.types';
+import { differenceInMonths, startOfMonth, format } from 'date-fns';
 
 function MonthlyAmount(props: MonthlyAmountProps): JSX.Element {
-  const { amountMonths, totalAmount } = props;
+  const { reachDate, totalAmount } = props;
+  const startOfMonthDate = startOfMonth(new Date());
+  const amountMonths = differenceInMonths(reachDate, startOfMonthDate);
   const amountPerMonth = Math.ceil(totalAmount / amountMonths);
 
   return (
@@ -23,7 +26,7 @@ function MonthlyAmount(props: MonthlyAmountProps): JSX.Element {
         <Text>
           You’re planning <strong>{amountMonths} monthly deposits</strong> to
           reach your <strong>{currencyFormater(totalAmount)}</strong> goal by{' '}
-          <strong>October 2020</strong>.
+          <strong>{format(reachDate, 'MMMM yyyy')}</strong>.
         </Text>
       </BottomContent>
     </GeneralMonthlyAmount>

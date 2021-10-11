@@ -11,13 +11,13 @@ function CurrencyInput(props: CurrencyInputProps): JSX.Element {
   const { label, name, value, setValue } = props;
 
   const handleChangeInput = (event: FormEvent<HTMLInputElement>) => {
-    const normalizedNumeric = currencyStringToNumber(event.currentTarget.value);
+    const normalizedNumber = currencyStringToNumber(event.currentTarget.value);
 
-    if (!normalizedNumeric) {
+    if (!normalizedNumber) {
       return setValue('');
     }
 
-    const formatedValue = codelessCurrentFormater(normalizedNumeric);
+    const formatedValue = codelessCurrentFormater(normalizedNumber);
     setValue(formatedValue);
   };
 

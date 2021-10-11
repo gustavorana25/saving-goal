@@ -1,4 +1,4 @@
 export interface MonthlyAmountProps {
   totalAmount: number;
-  amountMonths: number;
+  reachDate: Date;
 }
