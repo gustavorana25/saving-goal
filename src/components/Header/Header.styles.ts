@@ -3,7 +3,7 @@ import { device } from '../../styles/device/device';
 
 export const GeneralHeader = styled.header`
   padding: ${(props) =>
-    `${props.theme.gutterSpace.xMedium} ${props.theme.gutterSpace.xxxLarge}`};
+    `${props.theme.gutterSpace.xxMedium} ${props.theme.gutterSpace.xxxLarge}`};
   background-color: ${(props) => props.theme.colors.white};
 
   svg path {

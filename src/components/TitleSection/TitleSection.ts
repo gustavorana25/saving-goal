@@ -6,7 +6,7 @@ const TitleSection = styled.h1`
   font-size: ${(props) => props.theme.fontSizes.large};
   font-weight: normal;
   line-height: 120%;
-  margin-bottom: ${(props) => props.theme.gutterSpace.xMedium};
+  margin-bottom: ${(props) => props.theme.gutterSpace.xxMedium};
 
   ${device.mobile} {
     font-size: ${(props) => props.theme.fontSizes.xMedium};
