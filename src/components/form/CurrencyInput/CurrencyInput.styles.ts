@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../../styles/device/device';
 import SvgIcon from '../../SvgIcon/SvgIcon';
 
 export const Input = styled.input`
@@ -16,6 +17,11 @@ export const Input = styled.input`
 
   &:focus {
     border: 1px solid ${(props) => props.theme.colors.brandColorSecondary};
+  }
+
+  ${device.mobile} {
+    padding: 15px 16px 15px 44px;
+    font-size: ${(props) => props.theme.fontSizes.large};
   }
 `;
 

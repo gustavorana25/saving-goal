@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { device } from '../../../styles/device/device';
 import SvgIcon from '../../SvgIcon/SvgIcon';
 import { ArrowProps } from './MonthNavigation.types';
 
@@ -23,6 +24,10 @@ export const Container = styled.div`
       fill: ${(props) => props.theme.colors.brandColorSecondary};
     }
   }
+
+  ${device.mobile} {
+    padding: 6px 12px 6px;
+  }
 `;
 
 export const Month = styled.h5`
@@ -31,12 +36,21 @@ export const Month = styled.h5`
   font-weight: 600;
   line-height: 150%;
   text-transform: capitalize;
+
+  ${device.mobile} {
+    font-size: ${(props) => props.theme.fontSizes.small};
+  }
 `;
 
 export const Year = styled.p`
   color: ${(props) => props.theme.colors.blueGray600};
   font-size: ${(props) => props.theme.fontSizes.medium};
   line-height: 150%;
+  font-weight: normal;
+
+  ${device.mobile} {
+    font-size: ${(props) => props.theme.fontSizes.small};
+  }
 `;
 
 export const Arrow = styled(SvgIcon)<ArrowProps>`
@@ -52,14 +66,14 @@ export const Arrow = styled(SvgIcon)<ArrowProps>`
   }
 
   ${(props) =>
-    props.isRightArrow &&
+    props.$isRightArrow &&
     css`
       right: 12px;
       transform: translateY(-50%) rotate(180deg);
     `}
 
   ${(props) =>
-    !props.isRightArrow &&
+    !props.$isRightArrow &&
     css`
       left: 12px;
       transform: translateY(-50%);

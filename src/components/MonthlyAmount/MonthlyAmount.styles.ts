@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../styles/device/device';
 
 export const GeneralMonthlyAmount = styled.div`
   border-radius: ${(props) => props.theme.borderRadius.medium};
@@ -12,6 +13,10 @@ export const TopContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  ${device.mobile} {
+    padding: ${(props) => props.theme.gutterSpace.xxMedium};
+  }
 `;
 
 export const Title = styled.h3`
@@ -19,6 +24,10 @@ export const Title = styled.h3`
   font-size: ${(props) => props.theme.fontSizes.large};
   font-weight: normal;
   line-height: 120%;
+
+  ${device.mobile} {
+    font-size: ${(props) => props.theme.fontSizes.xMedium};
+  }
 `;
 
 export const AmountPerMonth = styled.h4`
@@ -27,6 +36,10 @@ export const AmountPerMonth = styled.h4`
   font-size: ${(props) => props.theme.fontSizes.xxLarge};
   font-weight: 500;
   line-height: 120%;
+
+  ${device.mobile} {
+    font-size: ${(props) => props.theme.fontSizes.xLarge};
+  }
 `;
 
 export const BottomContent = styled.div`
@@ -42,4 +55,8 @@ export const Text = styled.p`
   font-size: ${(props) => props.theme.fontSizes.xSmall};
   line-height: 130%;
   font-weight: normal;
+
+  ${device.mobile} {
+    text-align: center;
+  }
 `;
