@@ -62,14 +62,6 @@
     "prettier": "^2.3.1"
   },
   "jest": {
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    },
-    "coveragePathIgnorePatterns": [".styles.ts", ".types.ts", "/src/styles"]
+    "coveragePathIgnorePatterns": [".styles.ts", ".types.ts", "/src/styles",  "/src/utils/test"]
   }
 }
