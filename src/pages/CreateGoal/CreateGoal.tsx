@@ -5,7 +5,7 @@ import CurrencyInput from '../../components/form/CurrencyInput/CurrencyInput';
 import MonthNavigation from '../../components/form/MonthNavigation/MonthNavigation';
 import ImageAndInfo from '../../components/ImageAndInfo/ImageAndInfo';
 import MonthlyAmount from '../../components/MonthlyAmount/MonthlyAmount';
-import TitleSection from '../../components/TitleSection/TitleSection';
+import TitleSection from '../../components/TitleSection/TitleSection.styles';
 import { currencyStringToNumber } from '../../utils/currencyFormater';
 import { ButtonContainer, Grid, Section, Container } from './CreateGoal.styles';
 import { addMonths } from 'date-fns';
