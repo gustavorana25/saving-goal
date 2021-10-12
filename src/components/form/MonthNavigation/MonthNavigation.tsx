@@ -41,7 +41,7 @@ function MonthNavigation(props: MonthNavigationProps): JSX.Element {
         <Year>{year}</Year>
         <Arrow
           onClick={() => handleChangeMonth(1)}
-          isRightArrow
+          $isRightArrow
           src="arrow-left.svg"
         />
       </Container>

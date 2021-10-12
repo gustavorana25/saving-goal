@@ -8,5 +8,5 @@ export interface MonthNavigationProps {
 }
 
 export interface ArrowProps {
-  isRightArrow?: boolean;
+  $isRightArrow?: boolean;
 }
