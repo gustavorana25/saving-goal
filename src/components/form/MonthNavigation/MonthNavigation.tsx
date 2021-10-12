@@ -2,8 +2,8 @@ import { getMonthAndYearFromDate } from '../../../utils/dateFormater';
 import { Label } from '../Label/Label.styles';
 import { Arrow, Container, Month, Year } from './MonthNavigation.styles';
 import { MonthNavigationProps } from './MonthNavigation.types';
-import { addMonths, differenceInMonths, startOfMonth } from 'date-fns';
 import useKeyBind from '../../../utils/hooks/useKeyBind';
+import { changeMonthOnlyInFutureDates } from '../../../utils/changeMonthOnlyInFutureDates';
 
 function MonthNavigation(props: MonthNavigationProps): JSX.Element {
   const { label, name, value, handleChange } = props;
@@ -12,15 +12,7 @@ function MonthNavigation(props: MonthNavigationProps): JSX.Element {
 
   const handleChangeMonth = (diff: number) => {
     handleChange((currentDate) => {
-      const newDate = addMonths(currentDate, diff);
-      const startOfMonthDate = startOfMonth(new Date());
-      const diffInMonths = differenceInMonths(newDate, startOfMonthDate);
-      const isFutureDate = diffInMonths > 0;
-      if (isFutureDate) {
-        return newDate;
-      }
-
-      return currentDate;
+      return changeMonthOnlyInFutureDates(currentDate, diff);
     });
   };
 
@@ -33,6 +25,7 @@ function MonthNavigation(props: MonthNavigationProps): JSX.Element {
       <Label htmlFor={name}>{label}</Label>
       <Container
         tabIndex={0}
+        data-testid="month-navigation"
         onFocus={() => handleKeyBindActivation(true)}
         onBlur={() => handleKeyBindActivation(false)}
       >
