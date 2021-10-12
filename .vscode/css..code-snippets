@@ -1,0 +1,226 @@
+{
+    "primary font-family": {
+        "prefix": "themeffp",
+        "body": [
+            "font-family: ${(props) => props.theme.font.primary};",
+        ],
+        "description": "primary font-family"
+    },
+    "secondary font-family": {
+        "prefix": "themeffp",
+        "body": [
+            "font-family: ${(props) => props.theme.font.secondary};",
+        ],
+        "description": "secondary font-family"
+    },
+    "10px font-size": {
+        "prefix": "themefz10",
+        "body": [
+            "font-size: ${(props) => props.theme.fontSizes.xxSmall};",
+        ],
+        "description": "10px font-size"
+    },
+    "12px font-size": {
+        "prefix": "themefz12",
+        "body": [
+            "font-size: ${(props) => props.theme.fontSizes.xSmall};",
+        ],
+        "description": "12px font-size"
+    },
+    "14px font-size": {
+        "prefix": "themefz14",
+        "body": [
+            "font-size: ${(props) => props.theme.fontSizes.small};",
+        ],
+        "description": "14px font-size"
+    },
+    "16px font-size": {
+        "prefix": "themefz16",
+        "body": [
+            "font-size: ${(props) => props.theme.fontSizes.medium};",
+        ],
+        "description": "16px font-size"
+    },
+    "18px font-size": {
+        "prefix": "themefz18",
+        "body": [
+            "font-size: ${(props) => props.theme.fontSizes.xMedium};",
+        ],
+        "description": "18px font-size"
+    },
+    "20px font-size": {
+        "prefix": "themefz20",
+        "body": [
+            "font-size: ${(props) => props.theme.fontSizes.large};",
+        ],
+        "description": "20px font-size"
+    },
+    "24px font-size": {
+        "prefix": "themefz24",
+        "body": [
+            "font-size: ${(props) => props.theme.fontSizes.xLarge};",
+        ],
+        "description": "24px font-size"
+    },
+    "32px font-size": {
+        "prefix": "themefz32",
+        "body": [
+            "font-size: ${(props) => props.theme.fontSizes.xLarge};",
+        ],
+        "description": "32px font-size"
+    },
+    "white theme color": {
+        "prefix": "themecwhite",
+        "body": [
+            "${(props) => props.theme.colors.white}",
+        ],
+        "description": "white theme color"
+    },
+    "blueGray10 theme color": {
+        "prefix": "themecblueGray10",
+        "body": [
+            "${(props) => props.theme.colors.blueGray10}",
+        ],
+        "description": "blueGray10 theme color"
+    },
+    "blueGray50 theme color": {
+        "prefix": "themecblueGray50",
+        "body": [
+            "${(props) => props.theme.colors.blueGray50}",
+        ],
+        "description": "blueGray50 theme color"
+    },
+    "blueGray100 theme color": {
+        "prefix": "themecblueGray100",
+        "body": [
+            "${(props) => props.theme.colors.blueGray100}",
+        ],
+        "description": "blueGray100 theme color"
+    },
+    "blueGray300 theme color": {
+        "prefix": "themecblueGray300",
+        "body": [
+            "${(props) => props.theme.colors.blueGray300}",
+        ],
+        "description": "blueGray300 theme color"
+    },
+    "blueGray400 theme color": {
+        "prefix": "themecblueGray400",
+        "body": [
+            "${(props) => props.theme.colors.blueGray400}",
+        ],
+        "description": "blueGray400 theme color"
+    },
+    "blueGray600 theme color": {
+        "prefix": "themecblueGray600",
+        "body": [
+            "${(props) => props.theme.colors.blueGray600}",
+        ],
+        "description": "blueGray600 theme color"
+    },
+    "blueGray900 theme color": {
+        "prefix": "themecblueGray900",
+        "body": [
+            "${(props) => props.theme.colors.blueGray900}",
+        ],
+        "description": "blueGray900 theme color"
+    },
+    "brandColorPrimary theme color": {
+        "prefix": "themecbrandColorPrimary",
+        "body": [
+            "${(props) => props.theme.colors.brandColorPrimary}",
+        ],
+        "description": "brandColorPrimary theme color"
+    },
+    "brandColorSecondary theme color": {
+        "prefix": "themecbrandColorSecondary",
+        "body": [
+            "${(props) => props.theme.colors.brandColorSecondary}",
+        ],
+        "description": "brandColorSecondary theme color"
+    },
+    "4px theme gutterSpace": {
+        "prefix": "themegutt04",
+        "body": [
+            "${(props) => props.theme.gutterSpace.xSmall}",
+        ],
+        "description": "4px theme gutterSpace"
+    },
+    "8px theme gutterSpace": {
+        "prefix": "themegutt08",
+        "body": [
+            "${(props) => props.theme.gutterSpace.small}",
+        ],
+        "description": "8px theme gutterSpace"
+    },
+    "16px theme gutterSpace": {
+        "prefix": "themegutt16",
+        "body": [
+            "${(props) => props.theme.gutterSpace.medium}",
+        ],
+        "description": "16px theme gutterSpace"
+    },
+    "20px theme gutterSpace": {
+        "prefix": "themegutt20",
+        "body": [
+            "${(props) => props.theme.gutterSpace.xMedium}",
+        ],
+        "description": "20px theme gutterSpace"
+    },
+    "24px theme gutterSpace": {
+        "prefix": "themegutt24",
+        "body": [
+            "${(props) => props.theme.gutterSpace.xxMedium}",
+        ],
+        "description": "24px theme gutterSpace"
+    },
+    "32px theme gutterSpace": {
+        "prefix": "themegutt32",
+        "body": [
+            "${(props) => props.theme.gutterSpace.large}",
+        ],
+        "description": "32px theme gutterSpace"
+    },
+    "40px theme gutterSpace": {
+        "prefix": "themegutt40",
+        "body": [
+            "${(props) => props.theme.gutterSpace.xLarge}",
+        ],
+        "description": "40px theme gutterSpace"
+    },
+    "48px theme gutterSpace": {
+        "prefix": "themegutt48",
+        "body": [
+            "${(props) => props.theme.gutterSpace.xxLarge}",
+        ],
+        "description": "48px theme gutterSpace"
+    },
+    "56px theme gutterSpace": {
+        "prefix": "themegutt56",
+        "body": [
+            "${(props) => props.theme.gutterSpace.xxxLarge}",
+        ],
+        "description": "56px theme gutterSpace"
+    },
+    "4px theme border-radius": {
+        "prefix": "themebr04",
+        "body": [
+            "border-radius: ${(props) => props.theme.borderRadius.small};",
+        ],
+        "description": "4px theme border-radius"
+    },
+    "8px theme border-radius": {
+        "prefix": "themebr08",
+        "body": [
+            "border-radius: ${(props) => props.theme.borderRadius.medium};",
+        ],
+        "description": "8px theme border-radius"
+    },
+    "32px theme border-radius": {
+        "prefix": "themebr32",
+        "body": [
+            "border-radius: ${(props) => props.theme.borderRadius.large};",
+        ],
+        "description": "32px theme border-radius"
+    },
+}
