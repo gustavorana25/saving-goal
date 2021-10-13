@@ -10,9 +10,9 @@ function MonthNavigation(props: MonthNavigationProps): JSX.Element {
 
   const [month, year] = getMonthAndYearFromDate(value);
 
-  const handleChangeMonth = (diff: number) => {
+  const handleChangeMonth = (diffInMonths: number) => {
     handleChange((currentDate) => {
-      return changeMonthOnlyInFutureDates(currentDate, diff);
+      return changeMonthOnlyInFutureDates(currentDate, diffInMonths);
     });
   };
 
