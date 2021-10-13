@@ -10,7 +10,7 @@ export const theme = {
     blueGray100: '#CBD5DC',
     blueGray300: '#8A9CA9',
     blueGray400: '#708797',
-    blueGray600: '#708797',
+    blueGray600: '#4D6475',
     blueGray900: '#1E2A32',
     brandColorPrimary: '#1B31A8',
     brandColorSecondary: '#0079FF',

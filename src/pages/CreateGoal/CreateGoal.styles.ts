@@ -19,7 +19,7 @@ export const Container = styled.div`
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-columns: 272px auto;
   grid-column-gap: ${(props) => props.theme.gutterSpace.medium};
   grid-row-gap: ${(props) => props.theme.gutterSpace.medium};
 
