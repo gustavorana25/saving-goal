@@ -26,7 +26,9 @@ function MonthlyAmount(props: MonthlyAmountProps): JSX.Element | null {
     <GeneralMonthlyAmount>
       <TopContent>
         <Title>Monthly amount</Title>
-        <AmountPerMonth>{currencyFormater(amountPerMonth)}</AmountPerMonth>
+        <AmountPerMonth data-testid="amountPerMonthTitle">
+          {currencyFormater(amountPerMonth)}
+        </AmountPerMonth>
       </TopContent>
       <BottomContent>
         <Text data-testid="amountPerMonthText">
